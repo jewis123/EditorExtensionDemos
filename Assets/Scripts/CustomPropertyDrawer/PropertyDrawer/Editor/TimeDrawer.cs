@@ -4,6 +4,9 @@ using UnityEngine;
 [CustomPropertyDrawer (typeof (TimeAttribute))]
 public class TimeDrawer : PropertyDrawer {
 
+  TimeAttribute timeProperty { get { return ((TimeAttribute) attribute); } }
+
+
   //设置属性高度
   public override float GetPropertyHeight (SerializedProperty property, GUIContent label) {
     return EditorGUI.GetPropertyHeight (property) * 2;

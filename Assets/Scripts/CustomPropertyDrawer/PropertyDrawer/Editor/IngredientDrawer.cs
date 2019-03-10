@@ -25,6 +25,7 @@ public class IngredientDrawer:PropertyDrawer{
         var nameRect = new Rect(position.x + 90,position.y,position.width  -  90,position.height);
 
         //绘制字段 - 将GUIContent.none传递给每个字段，以便绘制它们而不是用标签
+        //property.FindPropertyRelative(string)  用来查找传入特性的特定属性
         EditorGUI.PropertyField(amountRect,property.FindPropertyRelative("amount"),GUIContent.none);
         EditorGUI.PropertyField(unitRect,property.FindPropertyRelative("unit"),GUIContent.none);
         EditorGUI.PropertyField(nameRect,property.FindPropertyRelative("name"),GUIContent.none);

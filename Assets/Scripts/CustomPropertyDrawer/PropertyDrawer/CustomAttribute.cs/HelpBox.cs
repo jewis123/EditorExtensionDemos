@@ -22,7 +22,7 @@ public sealed class HelpBoxAttribute : PropertyAttribute {
 
 public class HelpBox : MonoBehaviour {
     public int a = 0;
+    [HelpBoxAttribute ("警告：填写下面数据时需要谨慎", HelpBoxType.Warning)]
     [Space (22)]
-    [HelpBoxAttribute ("警告：填写下面数据时需要谨慎", HelpBoxType.Warning, 2)]
     public string text = "warn";
 }
