@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 4e8927da999c5b74b801e76434e96c72
+labels:
+- Inspector
+- EditorExtension
+- Utility
+- PropertyDrawer
+- PropertyAttribute
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

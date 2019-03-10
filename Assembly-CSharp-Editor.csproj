@@ -53,13 +53,43 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Demigiant\DOTweenPro\Editor\DOTweenAnimationInspector.cs" />
+     <Compile Include="Assets\_ThirdPart\Demigiant\DOTweenPro\Editor\DOTweenAnimationInspector.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\NamedMonoBehaviour\Internal\Editor\NMBColorDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\NamedMonoBehaviour\Internal\Editor\NMBNameDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\AssetPathDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\BackgroundDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\BaseKeywordDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\ButtonDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\ChangeCheckCallbackDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\CommentDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\ComplexHeaderDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\ComponentSelectionDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\CreateKeywords.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\DictionaryDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\DynamicRangeDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\EnumMaskDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\HideConditionalDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\HideVariableDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\IllogikaDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\ImageButtonDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\ImageDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\LayerDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\NamedMonoBehaviourAttributeDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\NamedMonoBehaviourDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\ReorderableListDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\SceneDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\SerializationWrappersDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\TagDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\TagListDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\UlongDrawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\Vector2Drawer.cs" />
+     <Compile Include="Assets\_ThirdPart\HeavyDutyInspector\PropertyDrawers\Editor\Vector3Drawer.cs" />
      <Compile Include="Assets\Scripts\CustomPropertyDrawer\DeractorDrawer\Editor\HelpBoxDrawer.cs" />
      <Compile Include="Assets\Scripts\CustomPropertyDrawer\PropertyDrawer\Editor\IngredientDrawer.cs" />
      <Compile Include="Assets\Scripts\CustomPropertyDrawer\PropertyDrawer\Editor\LabelDrawer.cs" />
      <Compile Include="Assets\Scripts\CustomPropertyDrawer\PropertyDrawer\Editor\RangeDrawer.cs" />
      <Compile Include="Assets\Scripts\CustomPropertyDrawer\PropertyDrawer\Editor\TimeDrawer.cs" />
-     <None Include="Assets\Demigiant\DemiLib\Core\Editor\DemiEditor.xml" />
+     <None Include="Assets\_ThirdPart\Demigiant\DemiLib\Core\Editor\DemiEditor.xml" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/Universe/EditorExtensionDemo/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
@@ -309,6 +339,33 @@
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>E:/unity2018X/3.0/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="DemiLib">
+ <HintPath>D:/Universe/EditorExtensionDemo/Assets/_ThirdPart/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
+ </Reference>
+ <Reference Include="DemiEditor">
+ <HintPath>D:/Universe/EditorExtensionDemo/Assets/_ThirdPart/Demigiant/DemiLib/Core/Editor/DemiEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>D:/Universe/EditorExtensionDemo/Assets/_ThirdPart/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween43">
+ <HintPath>D:/Universe/EditorExtensionDemo/Assets/_ThirdPart/Demigiant/DOTween/DOTween43.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween46">
+ <HintPath>D:/Universe/EditorExtensionDemo/Assets/_ThirdPart/Demigiant/DOTween/DOTween46.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween50">
+ <HintPath>D:/Universe/EditorExtensionDemo/Assets/_ThirdPart/Demigiant/DOTween/DOTween50.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenEditor">
+ <HintPath>D:/Universe/EditorExtensionDemo/Assets/_ThirdPart/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenPro">
+ <HintPath>D:/Universe/EditorExtensionDemo/Assets/_ThirdPart/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenProEditor">
+ <HintPath>D:/Universe/EditorExtensionDemo/Assets/_ThirdPart/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>D:/Universe/EditorExtensionDemo/Library/PackageCache/com.unity.ads@2.3.1/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -329,33 +386,6 @@
  </Reference>
  <Reference Include="UnityEditor.Purchasing">
  <HintPath>D:/Universe/EditorExtensionDemo/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
- </Reference>
- <Reference Include="DOTweenEditor">
- <HintPath>D:/Universe/EditorExtensionDemo/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
- </Reference>
- <Reference Include="DOTween46">
- <HintPath>D:/Universe/EditorExtensionDemo/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
- </Reference>
- <Reference Include="DOTweenProEditor">
- <HintPath>D:/Universe/EditorExtensionDemo/Assets/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll</HintPath>
- </Reference>
- <Reference Include="DOTween50">
- <HintPath>D:/Universe/EditorExtensionDemo/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
- </Reference>
- <Reference Include="DemiLib">
- <HintPath>D:/Universe/EditorExtensionDemo/Assets/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
- </Reference>
- <Reference Include="DemiEditor">
- <HintPath>D:/Universe/EditorExtensionDemo/Assets/Demigiant/DemiLib/Core/Editor/DemiEditor.dll</HintPath>
- </Reference>
- <Reference Include="DOTween43">
- <HintPath>D:/Universe/EditorExtensionDemo/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
- </Reference>
- <Reference Include="DOTween">
- <HintPath>D:/Universe/EditorExtensionDemo/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
- </Reference>
- <Reference Include="DOTweenPro">
- <HintPath>D:/Universe/EditorExtensionDemo/Assets/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>E:/unity2018X/3.0/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
