@@ -2,13 +2,13 @@ using UnityEditor;
 using UnityEngine;
 
 /// <summary>
-/// 弹窗，浮动窗口，不可以和其他窗口合并
+/// 弹窗,不可以调整大小、移动位置
 /// </summary>
 public class PopUpWindow : EditorWindow {
     [MenuItem ("CustomWindowTest/弹窗")]
     static void Init () {
         //获取指定类型窗口
-        var window = GetWindow<PopUpWindow> ();
+        var window = ScriptableObject.CreateInstance<PopUpWindow>(); //注意使用CreateInstance 和 ShowPopup
 
         //设置弹窗位置
         window.position = new Rect (Screen.width / 2, Screen.height / 2, 250, 150);
@@ -50,14 +50,24 @@ public class DropDownWindow : EditorWindow {
 /// 辅助窗口，避免小窗口混乱
 /// TODO:没明白具体是怎么实现窗口重用的
 /// </summary>
-public class AuxWindow : EditorWindow {
-    [MenuItem ("CustomWindowTest/辅助窗口")]
+public class AuxWindow1 : EditorWindow {
+    [MenuItem ("CustomWindowTest/辅助窗口1")]
     static void Init () {
-        var window = GetWindow<AuxWindow> ("AUX Window");
+        var window = GetWindow<AuxWindow1> ("AUX Window1");
+        window.ShowAuxWindow ();
+    }
+}
+public class AuxWindow2 : EditorWindow {
+    [MenuItem ("CustomWindowTest/辅助窗口2")]
+    static void Init () {
+        var window = GetWindow<AuxWindow2> ("AUX Window2");
         window.ShowAuxWindow ();
     }
 }
 
+/// <summary>
+/// 通知，一段事件显示后会自动消失
+/// </summary>
 public class Notification : EditorWindow {
     [MenuItem ("CustomWindowTest/通知信息")]
     static void Init () {
