@@ -1,6 +1,5 @@
-﻿using System.Collections;
+﻿using HeavyDutyInspector;
 using System.Collections.Generic;
-using HeavyDutyInspector;
 using UnityEngine;
 
 public class Test : MonoBehaviour {
@@ -12,6 +11,10 @@ public class Test : MonoBehaviour {
 
     [ButtonAttribute ("function", "SO", true)]
     public string s;
+
+    [Dictionary("dic")]
+    public Dictionary<string, int> dic = new Dictionary<string, int>();
+    
     public void SO () {
         Debug.Log ("SS");
     }

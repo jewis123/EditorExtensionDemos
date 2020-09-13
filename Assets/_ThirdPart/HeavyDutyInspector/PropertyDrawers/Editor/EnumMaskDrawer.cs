@@ -50,7 +50,7 @@ namespace HeavyDutyInspector
 
 			EditorGUI.BeginChangeCheck();
 
-			propEnum = EditorGUI.EnumMaskField(position, propEnum);
+			propEnum = EditorGUI.EnumFlagsField(position, propEnum);
 
 			if(EditorGUI.EndChangeCheck())
 			{
