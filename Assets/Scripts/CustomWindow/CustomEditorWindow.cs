@@ -25,7 +25,8 @@ public enum OPTIONS
     PLANE = 2
 }
 
-public class CustomEditorWindow : EditorWindow {
+public class CustomEditorWindow : EditorWindow
+{
 
     bool groupEnabled;
     float myFloat = 1.23f;
@@ -48,17 +49,19 @@ public class CustomEditorWindow : EditorWindow {
     string[] options = new string[] { "CanJump", "CanShoot", "CanSwim" };
 
     // 增加一个打开窗口的MenuItem
-    [MenuItem ("CustomWindowTest/默认窗口")]
-    private static void Init () {
+    [MenuItem("CustomWindowTest/默认窗口")]
+    private static void Init()
+    {
 
-        var window = GetWindow<CustomEditorWindow> ("Default Window");
-        window.Show ();
+        var window = GetWindow<CustomEditorWindow>("Default Window");
+        window.Show();
     }
 
-    void OnEnable () {
-        IsShowExtra = new AnimBool (true);    //创建一个可动选项
+    void OnEnable()
+    {
+        IsShowExtra = new AnimBool(true);    //创建一个可动选项
         IsShowExtra.speed = 5;
-        IsShowExtra.valueChanged.AddListener (Repaint);
+        IsShowExtra.valueChanged.AddListener(Repaint);
     }
 
     private void OnInspectorUpdate()
@@ -67,15 +70,18 @@ public class CustomEditorWindow : EditorWindow {
     }
 
     //绘制窗口
-    private void OnGUI () {
+    private void OnGUI()
+    {
         //设置一个选项卡
         drawTabs();
 
         //根据选项卡显示GUI
-        if (showOption1) {
+        if (showOption1)
+        {
             showOptionContent1();
-        } 
-        else if (showOption2) {
+        }
+        else if (showOption2)
+        {
             showOptionContent2();
         }
     }
@@ -173,7 +179,9 @@ public class CustomEditorWindow : EditorWindow {
 
     void showOptionContent2()
     {
-
+        GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/_Prefabs/1.prefab");
+        Texture2D texture = AssetPreview.GetAssetPreview(prefab);
+        GUILayout.Box(texture, GUILayout.Width(100), GUILayout.Height(100));
     }
 
     public void OnClickDropdownButton(object obj)
